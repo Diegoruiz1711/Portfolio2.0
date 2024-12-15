@@ -1,0 +1,115 @@
+/* Ajuste general del contenedor */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    margin-top: 2%;
+    box-sizing: border-box;
+    font-family: "Nova Square", sans-serif;
+    color: black;
+}
+
+/* Estilo del contenedor de la institución */
+.institution {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+/* Estilo de la ubicación */
+.location {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1%;
+    font-size: 1em;
+}
+
+.title {
+    font-size: 1.5em;
+    padding-top: 0;
+    margin-bottom: 1%;
+    font-weight: 300;
+}
+
+.list {
+    padding-top: 2%;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.flag {
+    width: 1.5em;
+    margin-left: 0.5em;
+}
+
+/* Modo oscuro */
+.dark {
+    background-color: rgb(30, 29, 29);
+    color: white;
+}
+
+.dark.container {
+    background-color: rgb(30, 29, 29);
+}
+
+.dark .location {
+    background-color: rgb(30, 29, 29);
+    color: white;
+}
+
+.dark .title {
+    background-color: rgb(30, 29, 29);
+    color: white;
+}
+
+.dark .list {
+    background-color: rgb(30, 29, 29);
+    color: white;
+}
+
+
+/* Media queries para adaptabilidad */
+@media (max-width: 1200px) {
+    .title {
+        font-size: 1.5em;
+    }
+
+    .list {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 992px) {
+    .title {
+        font-size: 1.3em;
+    }
+
+    .list {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.2em;
+    }
+
+    .list {
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 1.1em;
+    }
+
+    .list {
+        font-size: 0.8em;
+    }
+}

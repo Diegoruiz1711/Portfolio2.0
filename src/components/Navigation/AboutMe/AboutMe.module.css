@@ -1,0 +1,265 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15.4vh;
+    left: 19.5vw;
+    width: 61%;
+    height: 74%;
+    font-family: "Nova Square", sans-serif;
+    background-color: rgb(248, 247, 230);
+}
+
+.imageSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    border-radius: 50%;
+}
+
+.image:hover {
+    transform: scale(1.1);
+    transition: transform 0.7s ease-in-out;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.introSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin: 0 3%;
+}
+
+.titlesSection {
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textSection {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 3%;
+}
+
+.text {
+    text-align: left;
+    padding: 0;
+}
+
+.title {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: rgb(93, 24, 3);
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.subtitle {
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 1rem;
+    color: rgb(93, 24, 3);
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    margin: 0;
+}
+
+.aboutContact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+}
+
+.linkSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 15% 0;
+    width: 9rem;
+    height: 2rem;
+}
+
+.social {
+    display: flex;
+    height: 2rem;
+    margin: 0 5%;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.social1 {
+    display: flex;
+    height: 2rem;
+    margin: 0 5%;
+    padding: 0;
+    border-radius: 22%;
+}
+
+.social:hover,
+.social1:hover {
+    transform: scale(1.3);
+    transition: transform 0.7s ease-in-out;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(93, 24, 3);
+    border-color: rgb(93, 24, 3);
+    color: white;
+    font-weight: 300;
+    padding: 2%;
+    margin: 1%;
+    width: 9rem;
+    height: 2rem;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 1em;
+    animation: linksIn 2s ease-in-out forwards;
+    font-family: "Nova Square", sans-serif;
+}
+
+.button:hover {
+    background-color: rgb(255, 60, 0);
+    border-color: rgb(255, 60, 0);
+    transform: scale(1.1);
+    transition: transform 0.7s ease-in-out;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.dark {
+    background-color: rgb(30, 29, 29);
+    color: white;
+}
+
+.dark .title {
+    color: white;
+}
+
+.dark .subtitle {
+    color: white;
+}
+
+.mobileSection{
+    display: none;
+}
+
+@media (max-width: 1100px) {
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .imageSection{
+        width: 100%;
+        height: auto;
+    }
+
+    .image {
+        height: 20vh;
+    }
+
+    .introSection{
+        width: 100%;
+        height: auto;
+    }
+
+    .aboutContact {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 10%;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 15.1vh;
+        left: 6.3vw;
+        width: 87.5%;
+        height: 74.4%;
+        font-family: "Nova Square",
+            sans-serif;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 15.1vh;
+        left: 6.3vw;
+        width: 87.5%;
+        height: 74.4%;
+        font-family: "Nova Square", sans-serif;
+    }
+
+    .imageSection{
+        width: 100%;
+        height: auto;
+    }
+
+    .image {
+        height: 20vh;
+    }
+
+    
+    .introSection{
+        width: 100%;
+        height: auto;
+    }
+
+    .aboutContact {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 10%;
+        flex-direction: row;
+    }
+
+}

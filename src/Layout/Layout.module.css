@@ -1,0 +1,4 @@
+.container {
+    flex: 1; /* Permitir que los menús ocupen el espacio disponible */
+    overflow: hidden; /* Ocultar el overflow en cada menú */
+}

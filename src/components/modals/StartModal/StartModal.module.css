@@ -1,0 +1,182 @@
+ .modalContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 60vw;
+    height: 70vh;
+    border: none;
+    z-index: 15;
+}
+
+/* Fondo del modal */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+/* Contenido interno del modal */
+.innerModalContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+    width: 70vw;
+    height: 80vh;
+    border-radius: 10px;
+    padding: 1% 2% 1% 2%;
+    overflow-y: auto; /* Permite scroll si hay mucho contenido */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    font-family: "Nova Square", sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    height: 10%;
+}
+
+.titleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+}
+
+
+.langContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+}
+
+.lang {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flag {
+    height: 80%;
+    width: auto;
+    object-fit: contain;
+}
+
+.modalContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    color: white;
+    font-size: 1em;
+    line-height: 1.5;
+    width: 100%;
+    gap: 10%;
+}
+.icon{
+    width: 3%;
+}
+
+.row{
+    margin: 0.5% 0%;
+    text-align: left;
+    width: 100%;
+}
+
+.imageDescription{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    margin: 1%;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(93, 24, 3);
+    border-color: rgb(93, 24, 3);
+    color: white;
+    font-weight: 300;
+    padding: 2%;
+    margin: 1%;
+    width: 5rem;
+    height: 1rem;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 1em;
+    letter-spacing: 0.1em;
+    animation: linksIn 2s ease-in-out forwards;
+    font-family: "Nova Square", sans-serif;
+}
+
+.button:hover {
+    background-color: rgb(255, 60, 0);
+    border-color: rgb(255, 60, 0);
+    transform: scale(1.1);
+    transition: transform  0.7s ease-in-out;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 900px) {
+    .modalContainer {
+        width: 90%;
+        height: auto;
+    }
+    .innerModalContainer {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .langContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        height: 100%;
+    }
+
+    .lang {
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .modalContainer {
+        width: 90%;
+        height: auto;
+    }
+    .innerModalContainer {
+        font-size: 0.9em;
+    }
+}
