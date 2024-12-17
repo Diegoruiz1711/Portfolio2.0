@@ -5,7 +5,6 @@
     position: relative;
     width: 60vw;
     height: 70vh;
-    border: none;
     z-index: 15;
 }
 
@@ -36,7 +35,6 @@
     padding: 1% 2% 1% 2%;
     overflow-y: auto; /* Permite scroll si hay mucho contenido */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    z-index: 2;
     font-family: "Nova Square", sans-serif;
 }
 
@@ -148,7 +146,6 @@
 @media screen and (max-width: 900px) {
     .modalContainer {
         width: 90%;
-        height: auto;
     }
     .innerModalContainer {
         width: 95%;
@@ -174,7 +171,6 @@
 @media screen and (max-width: 600px) {
     .modalContainer {
         width: 90%;
-        height: auto;
     }
     .innerModalContainer {
         font-size: 0.9em;
