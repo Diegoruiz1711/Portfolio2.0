@@ -4,7 +4,7 @@
     justify-content: center;
     position: relative;
     width: 60vw;
-    height: 70vh;
+    height: 80vh;
     border: none;
     z-index: 15;
 }
@@ -23,15 +23,14 @@
     z-index: 10;
 }
 
-/* Contenido interno del modal */
 .innerModalContainer {
     position: relative;
     display: flex;
     align-items: center;
     background-color: black;
     flex-direction: column;
-    width: 60vw;
-    height: 70vh;
+    width: 90%;
+    height: 100%;
     border-radius: 10px;
     padding: 1% 2% 1% 2%;
     overflow-y: auto; /* Permite scroll si hay mucho contenido */
@@ -120,7 +119,7 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(67, 67, 67);
-    border: 5px solid rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
     border-radius: 5px;
     flex-direction: column;
     margin: 5% 0%;
