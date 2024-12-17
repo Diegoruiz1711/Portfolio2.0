@@ -57,6 +57,18 @@
     height: 10%;
 }
 
+.smallLink {
+    text-decoration: none;
+    padding: 0 2%;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s ease;
+    font-size: 1em;
+    font-weight: 400;
+    width: 3%;
+    text-align: center;
+}
+
 .titleContainer{
     display: flex;
     align-items: center;
@@ -269,7 +281,7 @@
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-        width: 35%;
+        width: 45%;
         height: 80%;
         background-color: rgb(37, 39, 58);
         gap: 0.5em;
@@ -312,34 +324,14 @@
     }
 
     .mobileMenu {
-        width: 65%;
+        width: 50%;
     }
 
     .accessControl {
-        width: 35%;
+        width: 50%;
     }
 } 
 
-@media screen and (max-width: 600px) {
-    .swipper {
-        height: 40%;
-        width: 80%;
-        border: 2px solid rgb(79, 79, 79);
-        background-color: rgb(197, 197, 197);
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
-        position: relative;
-        font-family: "Nova Square", sans-serif;
-        padding: 2% 0%;
-        border-radius: 10px;
-    }
-
-    .accessControl {
-        width: 40%;
-    }
-} 
 
 /* @media screen and (max-width: 520px) {
     .modalContainer {

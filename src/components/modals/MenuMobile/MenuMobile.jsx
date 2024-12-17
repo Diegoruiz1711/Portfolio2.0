@@ -11,16 +11,14 @@ import ArrowNext from '../../../assets/images/arrowNext.png'
 import AccessSwitch from '../../AccessSwitch/AccessSwitch';
 import AccessButton from '../../../assets/images/accessButton.png';
 import ThemeSwitch from '../../ThemeSwitch/ThemeSwitch';
+import { FaMoon, FaSun } from 'react-icons/fa';
 
 // import Marco from '../../../assets/images/marco1.png'
 
 const MenuMobile = () => {
 
-    const { activeModal, closeModal, handleLanguageClick, carrusel, carruselContent,
-        handleBack, modalIsOpen,
-        setModalIsOpen,
-        handleOpenModal,
-        handleCloseModal, handleNext, selectedLanguage, codeValue, handleAccessCode, numbers, handleAccessGaranted, accessLight, doorsOpen, doorsClose } = useContext(WebContext);
+    const { activeModal, closeModal, handleLanguageClick, carrusel, carruselContent,toggleTheme, isLightTheme,
+        handleBack, handleNext, selectedLanguage, codeValue, handleAccessCode, numbers, handleAccessGaranted } = useContext(WebContext);
 
     const { t } = useTranslation();
 
@@ -36,7 +34,10 @@ const MenuMobile = () => {
 
             <div className={styles.innerModalContainer}>
                 <div className={styles.modeContainer}>
-                    <ThemeSwitch />
+                    <div onClick={toggleTheme} className={styles.smallLink}>
+                        {isLightTheme ? <FaMoon size={18} /> : <FaSun size={18} />}
+                    </div>
+
                     <div className={styles.langContainer}>
                         <div
                             className={styles.lang}
