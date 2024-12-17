@@ -10,6 +10,7 @@ import ArrowBack from '../../../assets/images/arrowBack.png'
 import ArrowNext from '../../../assets/images/arrowNext.png'
 import AccessSwitch from '../../AccessSwitch/AccessSwitch';
 import AccessButton from '../../../assets/images/accessButton.png';
+import ThemeSwitch from '../../ThemeSwitch/ThemeSwitch';
 
 // import Marco from '../../../assets/images/marco1.png'
 
@@ -34,10 +35,8 @@ const MenuMobile = () => {
             {/* <div className={styles.Marco}></div> */}
 
             <div className={styles.innerModalContainer}>
-                <div className={styles.header}>
-                    <div className={styles.titleContainer}>
-                        <h2 className={styles.title}>{t('accessMenu')}</h2>
-                    </div>
+                <div className={styles.modeContainer}>
+                    <ThemeSwitch />
                     <div className={styles.langContainer}>
                         <div
                             className={styles.lang}
@@ -70,13 +69,20 @@ const MenuMobile = () => {
                         </div>
                     </div>
                 </div>
+                <div className={styles.header}>
+
+                    <div className={styles.titleContainer}>
+                        <h2 className={styles.title}>{t('accessMenu')}</h2>
+                    </div>
+
+                </div>
 
                 <div className={styles.modalContent}>
 
                     <div className={styles.mobileMenu}>
                         <div className={styles.swipper}>
                             <div className={styles.content}>
-                                <div className={styles.section1}>
+                                <div className={styles.section}>
                                     <p className={styles.navigationName}>
                                         {t('menu')}
                                     </p>
@@ -94,7 +100,7 @@ const MenuMobile = () => {
                                         {t('accessCode')}
                                     </p>
                                 </div>
-                                <div className={styles.section1}>
+                                <div className={styles.section}>
 
                                     <div className={styles.visorMenu}>
                                         {t(carruselContent[carrusel].code)}
