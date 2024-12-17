@@ -3,13 +3,12 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 60vw;
+    width: 90vw;
     height: 80vh;
     border: none;
     z-index: 15;
 }
 
-/* Fondo del modal */
 .modalOverlay {
     position: fixed;
     top: 0;
@@ -29,11 +28,11 @@
     align-items: center;
     background-color: black;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     height: 100%;
     border-radius: 10px;
-    padding: 1% 2% 1% 2%;
-    overflow-y: auto; /* Permite scroll si hay mucho contenido */
+    padding: 2%;
+    overflow-y: auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     font-family: "Nova Square", sans-serif;
 }
@@ -47,7 +46,7 @@
     height: 10%;
 }
 
-.titleContainer{
+.titleContainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,68 +60,67 @@
     color: white;
 }
 
-
 .langContainer {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 30%;
     height: 100%;
+    gap: 10px;
 }
 
 .lang {
-    width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 35px;
+    height: 35px;
 }
 
 .flag {
-    width: 30%;
+    width: 100%;
     object-fit: contain;
 }
 
 .modalContent {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-top: 20px;
     color: black;
     font-size: 1em;
-    line-height: 1.5;
     width: 100%;
     gap: 5%;
 }
 
 .mobileMenu {
-    width: 50%;
+    width: 45%;
 }
 
 .swipper {
     height: 40%;
-    width: 80%;
+    width: 90%;
     border: 2px solid rgb(79, 79, 79);
     background-color: rgb(197, 197, 197);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    position: relative;
     font-family: "Nova Square", sans-serif;
-    padding: 2% 0%;
+    padding: 2%;
 }
 
 .content {
     display: flex;
-    width: 80%;
-    height: 50%;
+    width: 90%;
+    height: 45%;
     align-items: center;
     justify-content: center;
     background-color: rgb(67, 67, 67);
     border: 3px solid rgb(0, 0, 0);
     border-radius: 5px;
     flex-direction: column;
-    margin: 5% 0%;
+    margin: 5% 0;
 }
 
 .arrowsContainer {
@@ -137,8 +135,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30%;
-    height: 100%;
+    width: 40px;
+    height: 40px;
     background-color: rgb(0, 0, 0);
     border: 5px solid rgb(54, 54, 54);
     border-radius: 50%;
@@ -150,16 +148,7 @@
     object-fit: contain;
 }
 
-.section1 {
-    height: 20%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: grey;
-    border: 2px solid rgb(58, 58, 58);
-}
-
+.section1,
 .section {
     height: 40%;
     width: 100%;
@@ -169,7 +158,6 @@
     background-color: grey;
     border: 2px solid rgb(58, 58, 58);
 }
-
 
 .navigationName {
     display: flex;
@@ -185,15 +173,14 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    width: 40%;
+    width: 50%;
     height: 80%;
     background-color: rgb(37, 39, 58);
-    gap: 0.5em;
+    gap: 10px;
 }
 
 .visorMenu,
 .visorControl {
-    margin-top: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -201,20 +188,13 @@
     width: 90%;
     background-color: rgb(0, 0, 0);
     border-radius: 15px;
-    border: 5px solid grey;
+    border: 3px solid grey;
     color: rgb(11, 182, 11);
     font-family: "Nova Square", sans-serif;
     font-weight: bold;
     font-size: 0.8em;
     letter-spacing: 0.1em;
-    padding-left: 0.6em;
     text-align: center;
-}
-
-.visorControl {
-    width: 70%;
-    height: 10%;
-    letter-spacing: 0.5em;
 }
 
 .numbers {
@@ -230,12 +210,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30%;
-    height: 20%;
+    width: 20%;
+    height: 15%;
     background-color: grey;
     border-radius: 5px;
     color: black;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
     font-family: "Nova Square", sans-serif;
 }
@@ -256,186 +236,95 @@
     height: 90%;
 }
 
-
 /* Estilos responsivos */
 @media screen and (max-width: 900px) {
     .modalContainer {
-        width: 90%;
+        width: 95%;
         height: auto;
     }
 
     .innerModalContainer {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
-    .modalContent{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+    .modalContent {
+        flex-direction: column;
     }
+
     .mobileMenu {
-        width: 40%;
-        }
-    .accessControl{
-        width: 30%;
+        width: 80%;
     }
-    .langContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 60%;
-        height: 10%;
+
+    .accessControl {
+        width: 90%;
+        height: auto;
     }
 
     .lang {
-        width: 50%;
-        height: 70%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .arrowsContainer {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        height: 15%;
-    }
-    
-    .arrow {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 30%;
-        height: 100%;
-        background-color: rgb(0, 0, 0);
-        border: 5px solid rgb(54, 54, 54);
-        border-radius: 50%;
+        width: 30px;
+        height: 30px;
     }
 
     .button {
-        width: 27%;
+        width: 25%;
+        height: 10%;
     }
-    .visorMenu{
+
+    .visorControl {
         font-size: 0.7em;
     }
 }
 
 @media screen and (max-width: 700px) {
-    .modalContainer {
-        width: 90%;
+    .modalContent {
+        gap: 20px;
+    }
+
+    .accessControl {
         height: auto;
     }
 
-    .innerModalContainer {
-        font-size: 1.1em;
-    }
-
-    .modalContent{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    .mobileMenu {
-        width: 50%;
-    }
-    .accessControl{
-        width: 50%;
-    }
-    .langContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 60%;
-        height: 10%;
-    }
-
-    .lang {
-        width: 50%;
-        height: 70%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .arrowsContainer {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        height: 15%;
-    }
-    
     .arrow {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 30%;
-        height: 100%;
-        background-color: rgb(0, 0, 0);
-        border: 5px solid rgb(54, 54, 54);
-        border-radius: 50%;
+        width: 35px;
+        height: 35px;
     }
 
     .button {
-        width: 27%;
-    }
-
-    .title {
-        font-size: 1.2em;
+        width: 22%;
+        height: 8%;
     }
 }
 
 @media screen and (max-width: 520px) {
-    .modalContainer {
-        width: 90%;
-        height: auto;
-    }
-
-    .innerModalContainer {
-        font-size: 0.9em;
-    }
-
-    .langContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 60%;
-        height: 10%;
+    .title {
+        font-size: 1.2em;
     }
 
     .lang {
-        width: 50%;
-        height: 70%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 25px;
+        height: 25px;
     }
 
-    .arrowsContainer {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        height: 15%;
-    }
-    
     .arrow {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 30%;
-        height: 100%;
-        background-color: rgb(0, 0, 0);
-        border: 5px solid rgb(54, 54, 54);
-        border-radius: 50%;
+        width: 30px;
+        height: 30px;
     }
 
     .button {
-        width: 27%;
+        width: 20%;
+        height: 8%;
     }
-    .title {
-        font-size: 1em;
+
+    .mobileMenu {
+        width: 100%;
+    }
+
+    .accessControl {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .visorControl {
+        font-size: 0.6em;
     }
 }
