@@ -85,7 +85,7 @@ const MenuMobile = () => {
                                 {t('menu')}
                             </p>
                         </div>
-                        <div className={styles.section}>
+                        <div className={styles.section2}>
                             <div className={styles.visorMenu}>
                                 {t(carruselContent[carrusel].text)}
                             </div>
@@ -98,7 +98,7 @@ const MenuMobile = () => {
                                 {t('accessCode')}
                             </p>
                         </div>
-                        <div className={styles.section}>
+                        <div className={styles.section2}>
 
                             <div className={styles.visorMenu}>
                                 {t(carruselContent[carrusel].code)}

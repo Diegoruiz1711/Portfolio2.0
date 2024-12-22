@@ -5,7 +5,7 @@
     justify-content: center;
     position: relative;
     width: 65vw;
-    height: 80vh;
+    height: 70vh;
     background-color: black;
     flex-direction: column;
     border: 2px solid black;
@@ -124,14 +124,33 @@
 .content {
     display: flex;
     width: 90%;
-    height: 50%;
+    height: 30%;
     align-items: center;
     justify-content: center;
     background-color: rgb(67, 67, 67);
     border: 3px solid rgb(0, 0, 0);
     border-radius: 5px;
     flex-direction: column;
-    margin: 3% 0%;
+}
+
+.section {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    border: 2px solid rgb(58, 58, 58);
+}
+
+.section2 {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: grey;
+    border: 2px solid rgb(58, 58, 58);
 }
 
 .arrowsContainer {
@@ -159,17 +178,6 @@
     object-fit: contain;
 }
 
-.section {
-    height: 40%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: grey;
-    border: 2px solid rgb(58, 58, 58);
-}
-
-
 .navigationName {
     display: flex;
     align-items: center;
@@ -196,7 +204,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80px;
+    height: 90%;
     width: 90%;
     background-color: rgb(0, 0, 0);
     border-radius: 15px;
