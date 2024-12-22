@@ -1,75 +1,3 @@
-/* .container {
-    display: inline-block;
-}
-
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 80px;
-    height: 42px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    cursor: pointer;
-    transition: 0.4s;
-    border-radius: 60px;
-    background-color: #383838;
-}
-
-.slider img {
-    position: absolute;
-    content: "";
-    height: 36px;
-    width: 36px;
-    left: 3px;
-    bottom: 3px;
-    transition: transform 0.4s;
-    border-radius: 50%;
-
-}
-
-input:checked+.slider {
-    background-color: #383838;
-}
-
-input:checked+.slider img {
-    transform: translateX(38px);
-}
-
-
-@media (max-width: 700px) {
-    .container {
-        width: 44px; /* Reduce el tamaño del contenedor *
-    }
-
-    .switch {
-        width: 42px;
-        height: 25px; 
-    }
-
-    .slider img {
-        height: 21px;
-        width: 21px;
-        left: 2px; 
-        bottom: 2px;
-    }
-
-    input:checked + .slider img {
-        transform: translateX(16px); 
-    }
-} */
-
 .container {
     display: inline-block;
 }
@@ -96,7 +24,7 @@ input:checked+.slider img {
     cursor: pointer;
     transition: 0.4s;
     border-radius: 60px;
-    background-color: #383838; /* Fondo del switch */
+    background-color: #383838; 
     display: flex;
     align-items: center;
     padding: 0 5px;
@@ -110,27 +38,27 @@ input:checked+.slider img {
 }
 
 .red {
-    background-color: red;
-    transform: translateX(0px); /* Posición inicial (izquierda) */
+    background-color: rgb(255, 0, 0);
+    transform: translateX(0px); 
 }
 
 .green {
     background-color: rgb(4, 255, 4);
-    transform: translateX(34x); /* Posición cuando está activado (derecha) */
+    transform: translateX(34x); 
 }
 
 input:checked + .slider .light {
-    transform: translateX(36px); /* Mueve el círculo a la derecha */
+    transform: translateX(36px); 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     .container {
         width: 44px;
     }
 
     .switch {
-        width: 42px;
-        height: 25px;
+        width: 50px;
+        height: 28px;
     }
 
     .slider {
@@ -138,19 +66,19 @@ input:checked + .slider .light {
     }
 
     .light {
-        height: 21px;
-        width: 21px;
+        height: 20px;
+        width: 20px;
     }
 
     .red {
-        transform: translateX(2px);
+        transform: translateX(4px);
     }
 
     .green {
-        transform: translateX(16px);
+        transform: translateX(14px);
     }
 
     input:checked + .slider .light {
-        transform: translateX(16px);
+        transform: translateX(22px);
     }
 }
