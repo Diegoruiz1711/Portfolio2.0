@@ -17,7 +17,7 @@ import { FaMoon, FaSun } from 'react-icons/fa';
 
 const MenuMobile = () => {
 
-    const { activeModal, closeModal, handleLanguageClick, carrusel, carruselContent,toggleTheme, isLightTheme,
+    const { activeModal, closeModal, handleLanguageClick, carrusel, carruselContent, toggleTheme, isLightTheme,
         handleBack, handleNext, selectedLanguage, codeValue, handleAccessCode, numbers, handleAccessGaranted } = useContext(WebContext);
 
     const { t } = useTranslation();
@@ -32,111 +32,109 @@ const MenuMobile = () => {
         >
             {/* <div className={styles.Marco}></div> */}
 
-                <div className={styles.modeContainer}>
-                    <div onClick={toggleTheme} className={styles.smallLink}>
-                        {isLightTheme ? <FaMoon size={18} /> : <FaSun size={18} />}
-                    </div>
-
-                    <div className={styles.langContainer}>
-                        <div
-                            className={styles.lang}
-                            style={{ transform: selectedLanguage === 'Esp' ? 'scale(0.8)' : 'scale(1)' }}
-                            onClick={() => {
-                                handleLanguageClick('Esp');
-                            }}
-                        >
-                            <img src={Esp} alt="Bandera Española" className={styles.flag} />
-                        </div>
-
-                        <div
-                            className={styles.lang}
-                            style={{ transform: selectedLanguage === 'UK' ? 'scale(0.8)' : 'scale(1)' }}
-                            onClick={() => {
-                                handleLanguageClick('UK');
-                            }}
-                        >
-                            <img src={Eng} alt="Bandera inglesa" className={styles.flag} />
-                        </div>
-
-                        <div
-                            className={styles.lang}
-                            style={{ transform: selectedLanguage === 'Cat' ? 'scale(0.8)' : 'scale(1)' }}
-                            onClick={() => {
-                                handleLanguageClick('Cat');
-                            }}
-                        >
-                            <img src={Cat} alt="Bandera catalana" className={styles.flag} />
-                        </div>
-                    </div>
-                </div>
-                <div className={styles.header}>
-
-                    <div className={styles.titleContainer}>
-                        <h2 className={styles.title}>{t('accessMenu')}</h2>
-                    </div>
-
+            <div className={styles.modeContainer}>
+                <div onClick={toggleTheme} className={styles.smallLink}>
+                    {isLightTheme ? <FaMoon size={18} /> : <FaSun size={18} />}
                 </div>
 
-                <div className={styles.modalContent}>
-                    <div className={styles.mobileMenu}>
-                        <div className={styles.swipper}>
-                            <div className={styles.content}>
-                                <div className={styles.section}>
-                                    <p className={styles.navigationName}>
-                                        {t('menu')}
-                                    </p>
-                                </div>
-                                <div className={styles.section}>
-                                    <div className={styles.visorMenu}>
-                                        {t(carruselContent[carrusel].text)}
-                                    </div>
-                                </div>
-                            </div>
+                <div className={styles.langContainer}>
+                    <div
+                        className={styles.lang}
+                        style={{ transform: selectedLanguage === 'Esp' ? 'scale(0.8)' : 'scale(1)' }}
+                        onClick={() => {
+                            handleLanguageClick('Esp');
+                        }}
+                    >
+                        <img src={Esp} alt="Bandera Española" className={styles.flag} />
+                    </div>
 
-                            <div className={styles.content}>
-                                <div className={styles.section}>
-                                    <p className={styles.navigationName}>
-                                        {t('accessCode')}
-                                    </p>
-                                </div>
-                                <div className={styles.section}>
+                    <div
+                        className={styles.lang}
+                        style={{ transform: selectedLanguage === 'UK' ? 'scale(0.8)' : 'scale(1)' }}
+                        onClick={() => {
+                            handleLanguageClick('UK');
+                        }}
+                    >
+                        <img src={Eng} alt="Bandera inglesa" className={styles.flag} />
+                    </div>
 
-                                    <div className={styles.visorMenu}>
-                                        {t(carruselContent[carrusel].code)}
-                                    </div>
-                                </div>
+                    <div
+                        className={styles.lang}
+                        style={{ transform: selectedLanguage === 'Cat' ? 'scale(0.8)' : 'scale(1)' }}
+                        onClick={() => {
+                            handleLanguageClick('Cat');
+                        }}
+                    >
+                        <img src={Cat} alt="Bandera catalana" className={styles.flag} />
+                    </div>
+                </div>
+            </div>
+            <div className={styles.header}>
 
-                            </div>
-                            <div className={styles.arrowsContainer}>
-                                <button className={styles.arrow} onClick={handleBack}>
-                                    <img src={ArrowBack} alt="Arrow Back" className={styles.arrowImg} />
-                                </button>
-                                <button className={styles.arrow} onClick={handleNext}>
-                                    <img src={ArrowNext} alt="Arrow Next" className={styles.arrowImg} />
-                                </button>
+                <div className={styles.titleContainer}>
+                    <h2 className={styles.title}>{t('accessMenu')}</h2>
+                </div>
+
+            </div>
+
+            <div className={styles.modalContent}>
+                <div className={styles.swipper}>
+                    <div className={styles.content}>
+                        <div className={styles.section}>
+                            <p className={styles.navigationName}>
+                                {t('menu')}
+                            </p>
+                        </div>
+                        <div className={styles.section}>
+                            <div className={styles.visorMenu}>
+                                {t(carruselContent[carrusel].text)}
                             </div>
                         </div>
                     </div>
-                    <div className={styles.accessControl}>
-                        <div className={styles.visorControl}>
-                            {codeValue}
+
+                    <div className={styles.content}>
+                        <div className={styles.section}>
+                            <p className={styles.navigationName}>
+                                {t('accessCode')}
+                            </p>
                         </div>
-                        <div className={styles.numbers}>
-                            {numbers.map((element, index) => (
-                                <button
-                                    key={index}
-                                    className={styles.button}
-                                    onClick={() => handleAccessCode(element)}
-                                >
-                                    {element}
-                                </button>
-                            ))}
+                        <div className={styles.section}>
+
+                            <div className={styles.visorMenu}>
+                                {t(carruselContent[carrusel].code)}
+                            </div>
                         </div>
-                        <button className={styles.accessButton} onClick={handleAccessGaranted}>
-                            <img src={AccessButton} alt="Access Button" className={styles.accessImg} />
+
+                    </div>
+                    <div className={styles.arrowsContainer}>
+                        <button className={styles.arrow} onClick={handleBack}>
+                            <img src={ArrowBack} alt="Arrow Back" className={styles.arrowImg} />
+                        </button>
+                        <button className={styles.arrow} onClick={handleNext}>
+                            <img src={ArrowNext} alt="Arrow Next" className={styles.arrowImg} />
                         </button>
                     </div>
                 </div>
+                <div className={styles.accessControl}>
+                    <div className={styles.visorControl}>
+                        {codeValue}
+                    </div>
+                    <div className={styles.numbers}>
+                        {numbers.map((element, index) => (
+                            <button
+                                key={index}
+                                className={styles.button}
+                                onClick={() => handleAccessCode(element)}
+                            >
+                                {element}
+                            </button>
+                        ))}
+                    </div>
+                    <button className={styles.accessButton} onClick={handleAccessGaranted}>
+                        <img src={AccessButton} alt="Access Button" className={styles.accessImg} />
+                    </button>
+                </div>
+            </div>
 
         </Modal >
     );

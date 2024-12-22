@@ -70,7 +70,7 @@
 
 .title {
     font-weight: 300;
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: white;
 }
 
@@ -98,20 +98,16 @@
 .modalContent {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-top: 20px;
     color: black;
     font-size: 1em;
     width: 100%;
 }
 
-.mobileMenu {
-    width: 50%;
-}
-
 .swipper {
-    height: 40%;
-    width: 90%;
+    height: 100%;
+    width: 40%;
     border: 2px solid rgb(79, 79, 79);
     background-color: rgb(197, 197, 197);
     display: flex;
@@ -187,7 +183,7 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    width: 35%;
+    width: 40%;
     height: 80%;
     background-color: rgb(37, 39, 58);
     gap: 0.5em;
@@ -225,7 +221,7 @@
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 100%;
+    width: 80%;
     height: 50%;
 }
 
@@ -260,7 +256,7 @@
 }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .modalContainer{
         width: 80vw;
     }
@@ -286,11 +282,7 @@
         width: 70%;
         font-size: 1em;
     }
-    
-    .numbers {
-        width: 80%;
-        height: 50%;
-    }
+
     
     .accessButton {
         display: flex;
@@ -300,6 +292,9 @@
         width: 80%;
         background-color: grey;
         margin-bottom: 7%;
+    }
+    .numbers {
+        width: 80%;
     }
 } 
 
@@ -321,6 +316,6 @@
     }
 
     .numbers {
-        width: 70%;
+        width: 80%;
     }
 } 
