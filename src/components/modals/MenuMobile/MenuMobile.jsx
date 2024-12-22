@@ -32,7 +32,6 @@ const MenuMobile = () => {
         >
             {/* <div className={styles.Marco}></div> */}
 
-            <div className={styles.innerModalContainer}>
                 <div className={styles.modeContainer}>
                     <div onClick={toggleTheme} className={styles.smallLink}>
                         {isLightTheme ? <FaMoon size={18} /> : <FaSun size={18} />}
@@ -79,7 +78,6 @@ const MenuMobile = () => {
                 </div>
 
                 <div className={styles.modalContent}>
-
                     <div className={styles.mobileMenu}>
                         <div className={styles.swipper}>
                             <div className={styles.content}>
@@ -139,7 +137,6 @@ const MenuMobile = () => {
                         </button>
                     </div>
                 </div>
-            </div>
 
         </Modal >
     );
