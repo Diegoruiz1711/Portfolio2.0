@@ -32,7 +32,6 @@ const StartModal = () => {
         >
             {/* <div className={styles.Marco}></div> */}
 
-            <div className={styles.innerModalContainer}>
                 <div className={styles.header}>
                     <div className={styles.titleContainer}>
                         <h2 className={styles.title}>{t('help')}</h2>
@@ -86,7 +85,6 @@ const StartModal = () => {
 
                 </div>
                 <div className={styles.button} onClick={closeModal}>{t('close')}</div>
-            </div>
 
         </Modal >
     );
