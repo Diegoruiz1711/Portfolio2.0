@@ -70,21 +70,23 @@ const StartModal = () => {
             </div>
 
             <div className={styles.modalContent}>
-                <p className={styles.row}>{t('startModal1')}</p>
-                <p className={styles.row}>{t('startModal2-1')} <span style={{ color: 'yellow' }}>mobile </span> {t('startModal2-2')}
-                    <img src={GetIn} alt="" className={styles.icon} /> {t('startModal2-3')}</p>
-                <div className={styles.imageDescription}>
-                    <img src={Swipper} alt="" className={styles.icon} /><p>{t('startModal3')}</p>
+                <div className={styles.content}>
+                    <p className={styles.row}>{t('startModal1')}</p>
+                    <p className={styles.row}>{t('startModal2-1')} <span style={{ color: 'yellow' }}>mobile </span> {t('startModal2-2')}
+                        <img src={GetIn} alt="" className={styles.icon} /> {t('startModal2-3')}</p>
+                    <div className={styles.imageDescription}>
+                        <img src={Swipper} alt="" className={styles.icon} /><p>{t('startModal3')}</p>
+                    </div>
+                    <div className={styles.imageDescription}>
+                        <img src={AccessControl} alt="" className={styles.icon} /><p>{t('startModal4')}</p>
+                    </div>
+                    <p className={styles.row}>{t('startModal2-1')} <span style={{ color: 'yellow' }}>web </span>{t('startModal5')}</p>
+
+                    <p className={styles.row}>{t('startModal6')}</p>
                 </div>
-                <div className={styles.imageDescription}>
-                    <img src={AccessControl} alt="" className={styles.icon} /><p>{t('startModal4')}</p>
+                <div className={styles.buttonContainer}>
+                    <div className={styles.button} onClick={closeModal}>{t('close')}</div>
                 </div>
-                <p className={styles.row}>{t('startModal2-1')} <span style={{ color: 'yellow' }}>web </span>{t('startModal5')}</p>
-
-                <p className={styles.row}>{t('startModal6')}</p>
-
-
-                <div className={styles.button} onClick={closeModal}>{t('close')}</div>
             </div>
         </Modal >
     );
