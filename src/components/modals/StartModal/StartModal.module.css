@@ -1,7 +1,5 @@
  .modalContainer {
     display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
     flex-direction: column;
     width: 50vw;
@@ -94,7 +92,6 @@
 }
 
 .row{
-    margin: 0.5% 0%;
     text-align: left;
     width: 100%;
 }
