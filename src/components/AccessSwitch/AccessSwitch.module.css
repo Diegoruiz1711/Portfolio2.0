@@ -1,4 +1,4 @@
-.container {
+/* .container {
     display: inline-block;
 }
 
@@ -50,22 +50,107 @@ input:checked+.slider img {
 
 @media (max-width: 700px) {
     .container {
-        width: 44px; /* Reduce el tamaño del contenedor */
+        width: 44px; /* Reduce el tamaño del contenedor *
     }
 
     .switch {
-        width: 42px; /* Ajusta el ancho del switch */
-        height: 25px; /* Ajusta el alto del switch */
+        width: 42px;
+        height: 25px; 
     }
 
     .slider img {
-        height: 21px; /* Reduce el tamaño de las luces */
+        height: 21px;
         width: 21px;
-        left: 2px; /* Ajusta la posición */
+        left: 2px; 
         bottom: 2px;
     }
 
     input:checked + .slider img {
-        transform: translateX(16px); /* Ajusta la traslación para coincidir con el nuevo tamaño */
+        transform: translateX(16px); 
+    }
+} */
+
+.container {
+    display: inline-block;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 42px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 60px;
+    background-color: #383838; /* Fondo del switch */
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.light {
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    transition: transform 0.4s;
+}
+
+.red {
+    background-color: red;
+    transform: translateX(0px); /* Posición inicial (izquierda) */
+}
+
+.green {
+    background-color: rgb(4, 255, 4);
+    transform: translateX(34x); /* Posición cuando está activado (derecha) */
+}
+
+input:checked + .slider .light {
+    transform: translateX(36px); /* Mueve el círculo a la derecha */
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: 44px;
+    }
+
+    .switch {
+        width: 42px;
+        height: 25px;
+    }
+
+    .slider {
+        padding: 0 2px;
+    }
+
+    .light {
+        height: 21px;
+        width: 21px;
+    }
+
+    .red {
+        transform: translateX(2px);
+    }
+
+    .green {
+        transform: translateX(16px);
+    }
+
+    input:checked + .slider .light {
+        transform: translateX(16px);
     }
 }
