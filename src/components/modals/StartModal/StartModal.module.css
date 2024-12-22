@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 60vw;
-    height: 70vh;
+    width: 50vw;
+    height: 50vh;
     z-index: 15;
 }
 
@@ -29,11 +29,11 @@
     align-items: center;
     background-color: black;
     flex-direction: column;
-    width: 70vw;
-    height: 80vh;
+    width: 100%;
+    height: 97%;
     border-radius: 10px;
     padding: 1% 2% 1% 2%;
-    overflow-y: auto; /* Permite scroll si hay mucho contenido */
+    overflow-y: auto; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     font-family: "Nova Square", sans-serif;
 }
@@ -87,12 +87,13 @@
 .modalContent {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     margin-top: 20px;
     color: white;
     font-size: 0.9em;
     width: 100%;
+    height: auto;
     gap: 10%;
 }
 .icon{
@@ -100,7 +101,7 @@
 }
 
 .row{
-    margin: 0.2% 0%;
+    margin: 0.5% 0%;
     text-align: left;
     width: 100%;
 }
@@ -122,7 +123,7 @@
     color: white;
     font-weight: 300;
     padding: 2%;
-    margin: 1%;
+    margin: 5%;
     width: 5rem;
     height: 1rem;
     font-size: 1em;
@@ -143,6 +144,12 @@
 
 /* Estilos responsivos */
 @media screen and (max-width: 900px) {
+    .modalContainer {
+        width: 40vw;
+        height: 45vh;
+        z-index: 15;
+    }
+
     .modalContainer {
         width: 90%;
     }
@@ -168,10 +175,55 @@
 }
 
 @media screen and (max-width: 600px) {
+
+    .modalContainer {
+        width: 90vw;
+        height: 80vh;
+        z-index: 15;
+    }
+
     .modalContainer {
         width: 90%;
     }
     .innerModalContainer {
         font-size: 0.9em;
+        width: 95%;
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 412px) {
+
+    .modalContainer {
+        width: 90vw;
+        height: 90vh;
+        z-index: 15;
+    }
+
+    .modalContainer {
+        width: 90%;
+    }
+    .innerModalContainer {
+        font-size: 0.9em;
+        width: 95%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .modalContainer {
+        width: 90vw;
+        height: 90vh;
+        z-index: 15;
+    }
+
+    .modalContainer {
+        width: 90%;
+    }
+    .innerModalContainer {
+        font-size: 0.9em;
+        width: 95%;
+        height: 50%;
     }
 }
