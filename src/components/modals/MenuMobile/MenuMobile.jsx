@@ -130,9 +130,9 @@ const MenuMobile = () => {
                             </button>
                         ))}
                     </div>
-                    <button className={styles.accessButton} onClick={handleAccessGaranted}>
+                    <div className={styles.accessButton} onClick={handleAccessGaranted}>
                         <img src={AccessButton} alt="Access Button" className={styles.accessImg} />
-                    </button>
+                    </div>
                 </div>
             </div>
 

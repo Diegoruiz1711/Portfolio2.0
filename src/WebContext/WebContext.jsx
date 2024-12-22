@@ -26,7 +26,7 @@
         // functions
         const navigate = useNavigate();
 
-        const numbers = [7, 8, 9, 4, 5, 6, 1, 2, 3, String.fromCodePoint(0x1F814), 0, 'CE'];
+        const numbers = [7, 8, 9, 4, 5, 6, 1, 2, 3, String.fromCodePoint(0x2190), 0, 'CE'];
 
         useEffect(() => {
             const initialModalName = 'startmodal';

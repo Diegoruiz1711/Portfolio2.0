@@ -252,14 +252,14 @@
         justify-content: center;
         align-items: center;
         height: 30%;
-        width: 70%;
+        width: 60%;
         background-color: grey;
         margin-bottom: 7%;
     }
 
     .accessImg {
         object-fit: cover;
-        width: 100%;
+        width: 90%;
         height: 90%;
     }
 }
