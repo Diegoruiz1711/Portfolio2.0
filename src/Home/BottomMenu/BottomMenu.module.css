@@ -12,3 +12,9 @@
     border-left: none;
     z-index: 8;
 }
+
+@media (max-width: 900px) {
+    .container{
+        display: none;
+    }
+ }
