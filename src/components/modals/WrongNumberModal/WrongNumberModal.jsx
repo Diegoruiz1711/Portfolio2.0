@@ -21,22 +21,20 @@ const WrongNumberModal = () => {
             overlayClassName={styles.modalOverlay}
             shouldCloseOnOverlayClick={true}
         >
-            <div className={styles.innerModalContainer}>
-                <div className={styles.titleContainer}>
-                    <h2 className={styles.title}>{t('error')}</h2>
-                </div>
-
-                <div className={styles.modalContent}>
-                    <div className={styles.alert}>
-                        <img src={Caution} alt="" className={styles.caution} />
-
-                        <p className={styles.row}>{t('errorText')}</p>
-
-                    </div>
-                </div>
-                <div className={styles.button} onClick={closeModal}>{t('close')}</div>
+            <div className={styles.titleContainer}>
+                <h2 className={styles.title}>{t('error')}</h2>
             </div>
 
+            <div className={styles.alert}>
+                <img src={Caution} alt="" className={styles.caution} />
+
+                <p className={styles.row}>{t('errorText')}</p>
+
+            </div>
+
+            <div className={styles.buttonContainer}>
+                <div className={styles.button} onClick={closeModal}>{t('close')}</div>
+            </div>
         </Modal >
     );
 };

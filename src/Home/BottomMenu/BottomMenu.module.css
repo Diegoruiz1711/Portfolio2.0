@@ -2,7 +2,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 100%;
+    width: 100vw;
     height: 7vh;
     background-color: #666666;
     display: flex; 

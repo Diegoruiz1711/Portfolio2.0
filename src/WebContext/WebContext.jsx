@@ -139,7 +139,7 @@
             if (!isExitClicked) {
                 if (element === 'CE') {
                     setCodeValue('');
-                } else if (element === String.fromCodePoint(0x1F814)) {
+                } else if (element === String.fromCodePoint(0x2190)) {
                     setCodeValue(prevCode => prevCode.slice(0, -1));
                 } else {
                     const newCodeValue = codeValue + element.toString();

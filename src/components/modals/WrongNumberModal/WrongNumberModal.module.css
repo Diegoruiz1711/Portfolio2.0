@@ -3,10 +3,14 @@
      align-items: center;
      justify-content: center;
      position: relative;
-     width: 50vw;
-     height: 40vh;
+     width: 30vw;
+     height: 30vh;
      border: none;
      z-index: 15;
+     background-color: black;
+     flex-direction: column;
+     overflow-y: auto;
+     border-radius: 10px;
  }
 
  /* Fondo del modal */
@@ -21,44 +25,14 @@
      align-items: center;
      justify-content: center;
      z-index: 12;
- }
-
- /* Contenido interno del modal */
- .innerModalContainer {
-     position: relative;
-     display: flex;
-     align-items: center;
-     background-color: black;
-     flex-direction: column;
-     width: 40vw;
-     height: 40vh;
-     border-radius: 10px;
-     padding: 1% 2% 1% 2%;
-     overflow-y: auto;
-     /* Permite scroll si hay mucho contenido */
-     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-     z-index: 2;
      font-family: "Nova Square", sans-serif;
- }
-
- .modalContent {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     flex-direction: column;
-     margin-top: 20px;
-     color: white;
-     font-size: 1em;
-     line-height: 1.5;
-     width: 100%;
-     gap: 10%;
  }
 
  .titleContainer {
      display: flex;
      align-items: center;
      justify-content: center;
-     width: 100%;
+     width: 90%;
      height: 25%;
      border-bottom: 1px solid #ccc;
  }
@@ -69,26 +43,38 @@
      color: white;
  }
 
- .alert {
-     display: flex;
-     align-items: center;
-     justify-content: space-evenly;
-     margin-bottom: 2%;
-     margin-left: 2%;
-     width: 100%;
- }
+.alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1em;
+    line-height: 1.5;
+    width: 90%;
+    height: 60%;
+}
 
  .caution {
-     height: 100%;
+     height: 80%;
      width: 20%;
      margin-right: 2%;
+     object-fit: contain;
  }
 
  .row {
      text-align: center;
      margin: 0.5% 0%;
+     width: 70%;
  }
 
+ .buttonContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    padding-bottom: 5%;
+}
 
  .button {
      display: flex;
@@ -127,9 +113,18 @@
         height: 30vh;
 
     }
-    .innerModalContainer {
-        width: 40vw;
+
+    .title {
+        font-size: 1.3em;
+    }
+} 
+
+@media screen and (max-width: 900px) {
+
+    .modalContainer {
+        width: 60vw;
         height: 30vh;
+
     }
 
     .title {
@@ -137,25 +132,15 @@
     }
 }
 
-@media screen and (max-width: 650px) {
-    .innerModalContainer {
-        width: 70vw;
-        height: 30vh;
-
-    }
+@media screen and (max-width: 600px) {
 
     .modalContainer {
-        width: 70vw;
+        width: 80vw;
         height: 30vh;
 
     }
 
     .title {
-        font-size: 1em;
-    }
-    .caution {
-        height: 80%;
-        width: 20%;
-        margin-right: 2%;
+        font-size: 1.3em;
     }
 }

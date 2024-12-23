@@ -13,8 +13,8 @@ const LeftMenu = () => {
     const { t } = useTranslation();
     const { carrusel, carruselContent,
         handleBack, handleNext, selectedLanguage, handleLanguageClick } = useContext(WebContext)
-
-
+        const context = useContext(WebContext);
+console.log(context)
     return (
         <div className={styles.container}>
             <div className={styles.swipper}>

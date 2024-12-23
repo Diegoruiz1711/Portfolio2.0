@@ -10,7 +10,7 @@ import AccessSwitch from '../../components/AccessSwitch/AccessSwitch';
 const TopMenu = () => {
 
     const { t } = useTranslation();
-    const { openModal, } = useContext(WebContext);
+    const { openModal } = useContext(WebContext);
 
     return (
         <div className={styles.container}>
