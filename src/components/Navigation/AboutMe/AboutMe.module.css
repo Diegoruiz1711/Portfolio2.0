@@ -3,10 +3,10 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 15.4vh;
+    top: 15.2vh;
     left: 19.5vw;
     width: 61%;
-    height: 74%;
+    height: 73.6%;
     font-family: "Nova Square", sans-serif;
     background-color: rgb(248, 247, 230);
 }
@@ -17,6 +17,7 @@
     align-items: center;
     width: 25%;
     height: 100%;
+    border: 2px solid red;
 }
 
 .image {
@@ -42,6 +43,8 @@
     width: 50%;
     height: 100%;
     margin: 0 3%;
+    border: 2px solid blue;
+
 }
 
 .titlesSection {
@@ -95,6 +98,8 @@
     flex-direction: column;
     width: 25%;
     height: 100%;
+    border: 2px solid orange;
+
 }
 
 .linkSection {
@@ -170,7 +175,7 @@
     color: white;
 }
 
-.mobileSection{
+.mobileSection {
     display: none;
 }
 
@@ -181,20 +186,21 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        gap: 5%;
     }
 
-    .imageSection{
+    .imageSection {
         width: 100%;
-        height: auto;
+        height: 35%;
     }
 
     .image {
         height: 20vh;
     }
 
-    .introSection{
+    .introSection {
         width: 100%;
-        height: auto;
+        height: 40%;
     }
 
     .aboutContact {
@@ -218,7 +224,7 @@
         left: 6.3vw;
         width: 87.5%;
         height: 71%;
-        font-family: "Nova Square",sans-serif;
+        font-family: "Nova Square", sans-serif;
     }
 }
 
@@ -231,26 +237,24 @@
         flex-direction: column;
         position: absolute;
         top: 15vh;
-        left: 6.3vw;
-        width: 87.5%;
-        height: 100%;
+        left: 6.5vw;
         font-family: "Nova Square", sans-serif;
     }
 
-    .imageSection{
+    .imageSection {
         width: 100%;
-        height: 25%;
-        margin-top: 10%;
+        height: 30%;
+        margin-top: 5%;
     }
 
     .image {
         height: 20vh;
     }
 
-    
-    .introSection{
+
+    .introSection {
         width: 100%;
-        height: 60%;
+        height: 40%;
     }
 
     .aboutContact {
@@ -258,7 +262,7 @@
         align-items: center;
         justify-content: space-around;
         width: 100%;
-        height: 15%;
+        height: 10%;
         flex-direction: row;
     }
 
