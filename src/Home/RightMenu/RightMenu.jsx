@@ -7,8 +7,9 @@ import Door from '../../assets/images/bgDoor.png';
 import Door2 from '../../assets/images/door2.png';
 import AccessSwitch from '../../components/AccessSwitch/AccessSwitch';
 
+
 const RightMenu = () => {
-    const { codeValue, handleAccessCode, numbers, handleAccessGaranted, accessLight, doorsOpen, doorsClose, openModal } = useContext(WebContext);
+    const { codeValue, handleAccessCode, numbers, handleAccessGaranted, doorsOpen, doorsClose } = useContext(WebContext);
 
     return (
         <>

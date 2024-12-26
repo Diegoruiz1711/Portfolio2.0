@@ -2,13 +2,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 61vw;
+    height: 73.4%;
     position: absolute;
-    top: 15.2vh;
-    left: 19.5vw;
-    width: 61%;
-    height: 73.6%;
+    top: 14.5vh;
+    left: 19vw;
+    padding: 0.4% 0.4% 0.7% 0.5%;
     font-family: "Nova Square", sans-serif;
-    background-color: rgb(248, 247, 230);
+    /* background-color: rgb(248, 247, 230);  */
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .imageSection {
@@ -16,8 +25,7 @@
     justify-content: center;
     align-items: center;
     width: 25%;
-    height: 100%;
-    border: 2px solid red;
+    height: 100%
 }
 
 .image {
@@ -43,7 +51,6 @@
     width: 50%;
     height: 100%;
     margin: 0 3%;
-    border: 2px solid blue;
 
 }
 
@@ -98,8 +105,6 @@
     flex-direction: column;
     width: 25%;
     height: 100%;
-    border: 2px solid orange;
-
 }
 
 .linkSection {
@@ -179,14 +184,13 @@
     display: none;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
 
     .container {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        gap: 5%;
     }
 
     .imageSection {
@@ -210,21 +214,6 @@
         width: 100%;
         height: 10%;
         flex-direction: row;
-    }
-}
-
-@media (max-width: 900px) {
-
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 15vh;
-        left: 6.3vw;
-        width: 87.5%;
-        height: 71%;
-        font-family: "Nova Square", sans-serif;
     }
 }
 
