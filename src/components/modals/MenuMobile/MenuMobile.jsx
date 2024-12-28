@@ -135,6 +135,9 @@ const MenuMobile = () => {
                     </div>
                 </div>
             </div>
+            <div className={styles.closeButtonContainer}>
+                    <div className={styles.closeButton} onClick={closeModal}>{t('close')}</div>
+                </div>
 
         </Modal >
     );

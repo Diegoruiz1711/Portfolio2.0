@@ -20,7 +20,7 @@ const StartModal = () => {
 
     return (
         <Modal
-            isOpen={activeModal === 'start0modal'}
+            isOpen={activeModal === 'startmodal'}
             onRequestClose={closeModal}
             className={styles.modalContainer}
             overlayClassName={styles.modalOverlay}

@@ -10,17 +10,12 @@ import { useTranslation } from 'react-i18next';
 
 const AboutMe = () => {
 
-    const { openModal, educationZIndex, isLightTheme } = useContext(WebContext)
+    const { openModal, educationZIndex, isLightTheme, closeModal } = useContext(WebContext)
     const { t } = useTranslation();
-
     const ghIcon = isLightTheme ? GHLight : GHDark;
 
-
     return (
-
-
         <div className={`${styles.container} ${!isLightTheme ? styles.dark : styles.light}`} style={{ zIndex: educationZIndex }}>
-
             <div className={styles.imageSection}>
                 <img src={FotoCV} alt="Imagen Home" className={styles.image} />
             </div>
@@ -34,14 +29,12 @@ const AboutMe = () => {
                     <p className={styles.text}>{t('hi')}</p>
                 </div>
             </div>
-
             <div className={styles.aboutContact}>
                 <div className={styles.linkSection}>
                     <Link to='https://github.com/Diegoruiz1711' style={{ zIndex: educationZIndex }} target='_blank'><img src={ghIcon} alt="Ícono de Github" className={styles.social} />
                     </Link>
                     <Link to='https://www.linkedin.com/in/diegoruiz1711/' style={{ zIndex: educationZIndex }} target='_blank'><img src={linkedInIcon} alt="Ícono de LinkedIn" className={styles.social1} />
                     </Link>
-
                 </div>
                 <div className={styles.linkSection}>
                     <div className={styles.button} style={{ zIndex: educationZIndex }} onClick={() => openModal('aboutme')}>{t('aboutMe')}</div>

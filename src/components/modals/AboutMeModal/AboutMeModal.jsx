@@ -28,6 +28,9 @@ const AboutMeModal = () => {
                     <p>{t('aboutMeText-4')}</p>
                     <p>{t('aboutMeText-5')}</p>
                 </div>
+                <div className={styles.buttonContainer}>
+                    <div className={styles.button} onClick={closeModal}>{t('close')}</div>
+                </div>
         </Modal >
     );
 };

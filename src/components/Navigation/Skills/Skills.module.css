@@ -2,19 +2,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 61vw;
+    height: 73.4%;
     position: absolute;
     flex-direction: column;
-    top: 15.4vh;
-    left: 19.5vw;
-    width: 61%;
-    height: 73%;
+    top: 14vh;
+    left: 19vw;
+    padding: 0.5%;
     font-family: "Nova Square", sans-serif;
     background-color: rgb(248, 247, 230);
 }
 
 .titlesSection {
     width: 100%;
-    height: 20%;
+    height: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,13 +32,13 @@
 }
 
 .skillsContainer {
-    width: 100%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 1%;
+    margin: 2%;
 }
 
 .skill {
@@ -56,10 +57,11 @@
 
 }
 
-.skill:hover{
+.skill:hover {
     transform: scale(1.1);
     transition: transform 0.8s ease-in-out;
 }
+
 .skillImage {
     display: flex;
     align-items: center;
@@ -97,7 +99,7 @@
 }
 
 @media (max-width: 1100px) {
-    .skill{
+    .skill {
         font-size: 0.9em;
     }
 }
@@ -112,17 +114,17 @@
         top: 15.1vh;
         left: 6.3vw;
         width: 87.5%;
-        height: 74.4%;
-        font-family: "Nova Square",
-            sans-serif;
+        height: calc(100vh - 17.4vh);
+        font-family: "Nova Square", sans-serif;
     }
 }
 
 @media (max-width: 700px) {
 
-    .skillName{
+    .skillName {
         font-size: 1.1em;
     }
+
     .titlesSection {
         text-align: center;
     }
@@ -134,15 +136,14 @@
         font-size: 1.1em;
         text-align: center;
     }
-    .skillName{
+
+    .skillName {
         font-size: 0.8em;
     }
 
-    .skill{
+    .skill {
         width: 90px;
         height: 40px;
         box-shadow: 3px px 0 0 rgba(0, 0, 0, 0.2);
     }
 }
-
-
