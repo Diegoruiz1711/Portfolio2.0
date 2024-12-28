@@ -9,7 +9,7 @@ import Caution from '../../../assets/images/caution.png';
 
 const WrongNumberModal = () => {
 
-    const { activeModal, closeModal } = useContext(WebContext);
+    const { activeModal, closeModal,handleWrongNumberAccess } = useContext(WebContext);
 
     const { t } = useTranslation();
 
@@ -33,7 +33,7 @@ const WrongNumberModal = () => {
             </div>
 
             <div className={styles.buttonContainer}>
-                <div className={styles.button} onClick={closeModal}>{t('close')}</div>
+                <div className={styles.button} onClick={handleWrongNumberAccess}>{t('close')}</div>
             </div>
         </Modal >
     );

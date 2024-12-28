@@ -14,17 +14,13 @@ import AccessControl from '../../../assets/images/smControl.png'
 
 const StartModal = () => {
 
-    const { activeModal, closeModal, handleLanguageClick, carrusel, carruselContent,
-        handleBack, modalIsOpen,
-        setModalIsOpen,
-        handleOpenModal,
-        setIsModalOpen, handleNext, selectedLanguage, codeValue, handleAccessCode, numbers, handleAccessGaranted, accessLight, doorsOpen, doorsClose } = useContext(WebContext);
+    const { activeModal, closeModal, handleLanguageClick, selectedLanguage } = useContext(WebContext);
 
     const { t } = useTranslation();
 
     return (
         <Modal
-            isOpen={activeModal === 'startmodal'}
+            isOpen={activeModal === 'start0modal'}
             onRequestClose={closeModal}
             className={styles.modalContainer}
             overlayClassName={styles.modalOverlay}

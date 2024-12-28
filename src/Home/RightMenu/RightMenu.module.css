@@ -1,17 +1,14 @@
 .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
     position: absolute;
     top: 0;
     right: 0;
-    margin-top: 9vh;
     width: 15vw;
-    height: 84vh;
+    height: 83.5vh;
     background-color: rgb(0, 0, 0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9;
-    flex-direction: column;
-    border: 2px solid black;
     font-family: "Nova Square", sans-serif;
 }
 
@@ -84,46 +81,6 @@
     height: 90%;
 }
 
-.background {
-    margin-top: 10vh;
-    margin-left: 15vw;
-    width: 70vw;
-    height: 83.4vh;
-    display: flex;
-    position: relative;
-}
-
-.door {
-    position: absolute;
-    top: 0;
-    right: 5;
-    z-index: 9;
-    width: 100%;
-    height: 101%;
-}
-
-.door1,
-.door2 {
-    position: absolute;
-    top: 5%;
-    left: -2.5;
-    z-index: 8;
-    width: 53.4%;
-    height: 90%;
-}
-
-.door2 {
-    right: -0.5%;
-}
-
-.door1.doorOpen {
-    animation: openDoor 2.5s ease-in-out forwards;
-}
-
-.door2.doorOpen {
-    animation: openDoor2 2.5s ease-in-out forwards;
-}
-
 .accessLights {
     width: 70%;
     height: 12%;
@@ -148,62 +105,6 @@
 
 .topButtons{
     width: 100%;
-}
-
-@keyframes openDoor {
-    0% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateX(-50vw);
-        opacity: 1;
-    }
-}
-
-@keyframes openDoor2 {
-    0% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateX(50vw);
-        opacity: 1;
-    }
-}
-
-.door1.doorClose {
-    animation: closeDoor 2.5s ease-in-out forwards;
-}
-
-.door2.doorClose {
-    animation: closeDoor2 2.5s ease-in-out forwards;
-}
-
-@keyframes closeDoor {
-    0% {
-        transform: translateX(-50vw);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes closeDoor2 {
-    0% {
-        transform: translateX(50vw);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
 }
 
 
@@ -236,14 +137,6 @@
 @media (max-width: 900px) {
     .container{
         display: none;
-    }
-    .background {
-        margin-top: 10vh;
-        margin-left: 0vw;
-        width: 100vw;
-        height: 80vh;
-        display: flex;
-        position: relative;
     }
 
     .accessLights{

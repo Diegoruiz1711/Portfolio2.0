@@ -2,14 +2,11 @@ import styles from './RightMenu.module.css';
 import AccessButton from '../../assets/images/accessButton.png';
 import { useContext } from 'react';
 import { WebContext } from '../../WebContext/WebContext';
-import Door1 from '../../assets/images/door1.png';
-import Door from '../../assets/images/bgDoor.png';
-import Door2 from '../../assets/images/door2.png';
 import AccessSwitch from '../../components/AccessSwitch/AccessSwitch';
 
 
 const RightMenu = () => {
-    const { codeValue, handleAccessCode, numbers, handleAccessGaranted, doorsOpen, doorsClose } = useContext(WebContext);
+    const { codeValue, handleAccessCode, numbers, handleAccessGaranted } = useContext(WebContext);
 
     return (
         <>
@@ -36,27 +33,8 @@ const RightMenu = () => {
                         <img src={AccessButton} alt="Access Button" className={styles.accessImg} />
                     </button>
                 </div>
-
             </div>
-            <div className={styles.background}>
-                <img
-                    src={Door}
-                    alt="Marco de la puerta"
-                    className={`${styles.door}`}
-                />
-                <img
-                    src={Door1}
-                    alt="Puerta izquierda"
-                    className={`${styles.door1} ${doorsOpen ? styles.doorOpen : ''}
-                                                ${doorsClose ? styles.doorClose : ''}`}
-                />
-                <img
-                    src={Door2}
-                    alt="Puerta derecha"
-                    className={`${styles.door2} ${doorsOpen ? styles.doorOpen : ''}
-                                                ${doorsClose ? styles.doorClose : ''}`}
-                />
-            </div>
+    
 
         </>
     );
