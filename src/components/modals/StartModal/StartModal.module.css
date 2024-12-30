@@ -3,7 +3,7 @@
     position: relative;
     flex-direction: column;
     width: 50vw;
-    height: 65vh;
+    height: 75vh;
     z-index: 12;
     background-color: black;
     border-radius: 10px;
@@ -91,6 +91,7 @@
 
 .icon{
     width: 3%;
+    margin: 1%;
 }
 
 .row{
