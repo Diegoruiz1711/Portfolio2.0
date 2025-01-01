@@ -33,7 +33,7 @@ const AboutMe = () => {
                 <div className={styles.linkSection}>
                     <Link to='https://github.com/Diegoruiz1711' style={{ zIndex: educationZIndex }} target='_blank'><img src={ghIcon} alt="Ícono de Github" className={styles.social} />
                     </Link>
-                    <Link to='https://www.linkedin.com/in/diegoruiz1711/' style={{ zIndex: educationZIndex }} target='_blank'><img src={linkedInIcon} alt="Ícono de LinkedIn" className={styles.social1} />
+                    <Link to='https://www.linkedin.com/in/diegoruizmartin/' style={{ zIndex: educationZIndex }} target='_blank'><img src={linkedInIcon} alt="Ícono de LinkedIn" className={styles.social1} />
                     </Link>
                 </div>
                 <div className={styles.linkSection}>
